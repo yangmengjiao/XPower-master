@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="76" id="KGk-i7-Jjw" customClass="PointsTableViewCell" customModule="EarthPower" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="355" height="76"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="355" height="76"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleAspectFit" alignment="center" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="myF-sP-Uke">
+                        <rect key="frame" x="10" y="10" width="334" height="56"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vhM-0R-BQO" userLabel="AddButton">
+                                <rect key="frame" x="10" y="18.5" width="20" height="19"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="7tf-Cj-h4r"/>
+                                    <constraint firstAttribute="width" constant="20" id="A4w-zk-hCm"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="plus.circle" catalog="system"/>
+                                <state key="selected" image="plus.circle.fill" catalog="system"/>
+                                <connections>
+                                    <action selector="addButtonClicked:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="SFF-U6-fd1"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="251" text="Label" lineBreakMode="wordWrap" numberOfLines="4" baselineAdjustment="alignBaselines" minimumScaleFactor="0.75" translatesAutoresizingMaskIntoConstraints="NO" id="xn6-MB-dUs" userLabel="DescriptionLabel">
+                                <rect key="frame" x="45" y="18.5" width="224" height="19.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YTE-nm-s6D" userLabel="StarButton">
+                                <rect key="frame" x="284" y="8" width="40" height="40"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="JAu-yx-65c"/>
+                                    <constraint firstAttribute="width" constant="40" id="nMP-YO-TJD"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <inset key="imageEdgeInsets" minX="52" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" backgroundImage="NoFavorite"/>
+                                <connections>
+                                    <action selector="starButtonClicked:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="JSM-ZW-Fhk"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="YTE-nm-s6D" firstAttribute="leading" secondItem="xn6-MB-dUs" secondAttribute="trailing" constant="15" id="0ZR-Os-GPo"/>
+                            <constraint firstItem="vhM-0R-BQO" firstAttribute="leading" secondItem="myF-sP-Uke" secondAttribute="leading" constant="10" id="Jeo-Hp-Sls"/>
+                            <constraint firstItem="YTE-nm-s6D" firstAttribute="leading" secondItem="xn6-MB-dUs" secondAttribute="trailing" constant="15" id="cHI-JE-avJ"/>
+                            <constraint firstItem="xn6-MB-dUs" firstAttribute="leading" secondItem="vhM-0R-BQO" secondAttribute="trailing" constant="15" id="lOd-NK-HWh"/>
+                            <constraint firstItem="xn6-MB-dUs" firstAttribute="leading" secondItem="vhM-0R-BQO" secondAttribute="trailing" constant="15" id="owG-9g-13d"/>
+                            <constraint firstAttribute="trailing" secondItem="YTE-nm-s6D" secondAttribute="trailing" constant="10" id="wMT-8l-quo"/>
+                        </constraints>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="myF-sP-Uke" secondAttribute="trailing" constant="11" id="3F6-Qw-qPh"/>
+                    <constraint firstItem="myF-sP-Uke" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="MUa-ns-tJ0"/>
+                    <constraint firstAttribute="bottom" secondItem="myF-sP-Uke" secondAttribute="bottom" constant="10" id="aGG-s9-L5f"/>
+                    <constraint firstItem="myF-sP-Uke" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="k50-Gz-X3p"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="addButton" destination="vhM-0R-BQO" id="7zz-WR-mkP"/>
+                <outlet property="descriptionLabel" destination="xn6-MB-dUs" id="ZJb-L1-SZx"/>
+                <outlet property="starButton" destination="YTE-nm-s6D" id="uAC-tZ-6mr"/>
+            </connections>
+            <point key="canvasLocation" x="157.24637681159422" y="116.51785714285714"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="NoFavorite" width="40" height="39.5"/>
+        <image name="plus.circle" catalog="system" width="128" height="121"/>
+        <image name="plus.circle.fill" catalog="system" width="128" height="121"/>
+    </resources>
+</document>
